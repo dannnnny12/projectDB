@@ -42,7 +42,7 @@ class Ui_company(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    company = QtWidgets.QDialog()
+    company = QtWidgets.QMainWindow()
     ui = Ui_company()
     ui.setupUi(company)
     company.show()

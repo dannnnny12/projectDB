@@ -43,7 +43,7 @@ class Ui_soldHistory(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    soldHistory = QtWidgets.QDialog()
+    soldHistory = QtWidgets.QMainWindow()
     ui = Ui_soldHistory()
     ui.setupUi(soldHistory)
     soldHistory.show()

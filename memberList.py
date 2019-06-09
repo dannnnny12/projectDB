@@ -42,7 +42,7 @@ class Ui_memberList(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    memberList = QtWidgets.QDialog()
+    memberList = QtWidgets.QMainWindow()
     ui = Ui_memberList()
     ui.setupUi(memberList)
     memberList.show()

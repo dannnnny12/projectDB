@@ -7,12 +7,41 @@
 # WARNING! All changes made in this file will be lost!
 from PyQt5 import QtCore, QtGui, QtWidgets
 from items import Ui_items
+from companyList import Ui_company
+from soldHistry import Ui_soldHistory
+from memberList import Ui_memberList
+from order import Ui_order
 class Ui_main(object):
-	def openWindow(self):
+	def openItemsWindow(self):
 		self.window = QtWidgets.QMainWindow()
 		self.ui= Ui_items()
 		self.ui.setupUi(self.window)
 		self.window.show()
+
+	def openCompanyWindow(self):
+		self.window = QtWidgets.QMainWindow()
+		self.ui= Ui_company()
+		self.ui.setupUi(self.window)
+		self.window.show()
+
+	def openSoldWindow(self):
+		self.window = QtWidgets.QMainWindow()
+		self.ui= Ui_soldHistory()
+		self.ui.setupUi(self.window)
+		self.window.show()
+
+	def openOrderWindow(self):
+		self.window = QtWidgets.QMainWindow()
+		self.ui= Ui_order()
+		self.ui.setupUi(self.window)
+		self.window.show()
+
+	def openMemberWindow(self):
+		self.window = QtWidgets.QMainWindow()
+		self.ui= Ui_memberList()
+		self.ui.setupUi(self.window)
+		self.window.show()
+
 
 	def setupUi(self, main):
 		main.setObjectName("main")
@@ -32,7 +61,7 @@ class Ui_main(object):
 		self.viewOurItems.setFont(font)
 		self.viewOurItems.setObjectName("viewOurItems")
 		#button listener
-		self.viewOurItems.clicked.connect(self.openWindow)
+		self.viewOurItems.clicked.connect(self.openItemsWindow)
 
 		self.viewOurCompanies = QtWidgets.QPushButton(main)
 		self.viewOurCompanies.setGeometry(QtCore.QRect(140, 150, 241, 31))
@@ -41,6 +70,9 @@ class Ui_main(object):
 		font.setPointSize(14)
 		self.viewOurCompanies.setFont(font)
 		self.viewOurCompanies.setObjectName("viewOurCompanies")
+
+		self.viewOurCompanies.clicked.connect(self.openCompanyWindow)
+
 		self.pushButton = QtWidgets.QPushButton(main)
 		self.pushButton.setGeometry(QtCore.QRect(170, 200, 201, 31))
 		font = QtGui.QFont()
@@ -48,6 +80,9 @@ class Ui_main(object):
 		font.setPointSize(14)
 		self.pushButton.setFont(font)
 		self.pushButton.setObjectName("pushButton")
+		self.pushButton.clicked.connect(self.openSoldWindow)
+
+
 		self.placeAnOrder = QtWidgets.QPushButton(main)
 		self.placeAnOrder.setGeometry(QtCore.QRect(180, 260, 181, 31))
 		font = QtGui.QFont()
@@ -55,6 +90,10 @@ class Ui_main(object):
 		font.setPointSize(14)
 		self.placeAnOrder.setFont(font)
 		self.placeAnOrder.setObjectName("placeAnOrder")
+		self.placeAnOrder.clicked.connect(self.openOrderWindow)
+
+
+
 		self.pushButton_2 = QtWidgets.QPushButton(main)
 		self.pushButton_2.setGeometry(QtCore.QRect(210, 320, 121, 28))
 		font = QtGui.QFont()
@@ -62,6 +101,7 @@ class Ui_main(object):
 		font.setPointSize(14)
 		self.pushButton_2.setFont(font)
 		self.pushButton_2.setObjectName("pushButton_2")
+		self.pushButton_2.clicked.connect(self.openMemberWindow)
 
 		self.retranslateUi(main)
 		QtCore.QMetaObject.connectSlotsByName(main)
