@@ -5,13 +5,12 @@
 # Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
-import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
-import items
+from items import Ui_items
 class Ui_main(object):
 	def openWindow(self):
-		self.window = items.main()
-		self.ui = Ui_items()
+		self.window = QtWidgets.QMainWindow()
+		self.ui= Ui_items()
 		self.ui.setupUi(self.window)
 		self.window.show()
 
@@ -79,9 +78,9 @@ class Ui_main(object):
 
 
 if __name__ == "__main__":
-	
+	import sys
 	app = QtWidgets.QApplication(sys.argv)
-	main = QtWidgets.QDialog()
+	main = QtWidgets.QMainWindow()
 	ui = Ui_main()
 	ui.setupUi(main)
 	main.show()

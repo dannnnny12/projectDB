@@ -9,7 +9,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_items(object):
-
     def setupUi(self, items):
         items.setObjectName("items")
         items.resize(400, 300)
@@ -43,7 +42,7 @@ class Ui_items(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    items = QtWidgets.QDialog()
+    items = QtWidgets.QMainWindow()
     ui = Ui_items()
     ui.setupUi(items)
     items.show()
