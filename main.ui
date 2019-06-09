@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>main</class>
+ <widget class="QDialog" name="main">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -35,7 +35,7 @@
   <widget class="QPushButton" name="viewOurItems">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>180</x>
      <y>100</y>
      <width>181</width>
      <height>31</height>
@@ -55,7 +55,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>140</y>
+     <y>150</y>
      <width>241</width>
      <height>31</height>
     </rect>
@@ -73,8 +73,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>180</y>
+     <x>170</x>
+     <y>200</y>
      <width>201</width>
      <height>31</height>
     </rect>
@@ -92,8 +92,8 @@
   <widget class="QPushButton" name="placeAnOrder">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>220</y>
+     <x>180</x>
+     <y>260</y>
      <width>181</width>
      <height>31</height>
     </rect>
@@ -111,8 +111,8 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>280</y>
+     <x>210</x>
+     <y>320</y>
      <width>121</width>
      <height>28</height>
     </rect>
