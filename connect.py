@@ -9,4 +9,7 @@ db_connect = mysql.connector.connect(
 
 cursor = db_connect.cursor()
 
+cursor.execute('SELECT * FROM project.items')
+result = cursor.fetchall()
+print(result)
 
