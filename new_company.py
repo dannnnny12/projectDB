@@ -36,7 +36,7 @@ class ListViewDemo_companies(QWidget):
 
 
     def __init__(self,parent=None):
-        super(ListViewDemo, self).__init__(parent)
+        super(ListViewDemo_companies, self).__init__(parent)
 
         self.resize(300,270)
         self.setWindowTitle('COMPANY')
@@ -61,12 +61,12 @@ class ListViewDemo_companies(QWidget):
 
     def clicked(self,qModelIndex):
 
-        QMessageBox.information(self,'ListWidget',
+        QMessageBox.information(self,'公司資訊',
         '公司名稱:'+self.qList1[qModelIndex.row()]+"\n"
         + '公司名稱:'+ self.qList1[qModelIndex.row()])
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)
-    win=ListViewDemo()
+    win=ListViewDemo_companies()
     win.show()
     sys.exit(app.exec_())

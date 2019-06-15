@@ -34,7 +34,7 @@ class ListViewDemo_member(QWidget):
     cursor.execute('SELECT * FROM project.members')
     result = cursor.fetchall()
     print(result)
-
+    
     for rows in result:
             adjust = list(rows)
             menber_num.append(adjust[0])
@@ -45,7 +45,8 @@ class ListViewDemo_member(QWidget):
             menber_address.append(adjust[5])
 
     def __init__(self,parent=None):
-        super(ListViewDemo, self).__init__(parent)
+        
+        super(ListViewDemo_member, self).__init__(parent)
 
         self.resize(300,270)
         self.setWindowTitle('MENBER')
@@ -74,7 +75,7 @@ class ListViewDemo_member(QWidget):
 
     def clicked(self,qModelIndex):
 
-        QMessageBox.information(self,'ListWidget',
+        QMessageBox.information(self,'顧客資訊',
         '顧客編號:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '顧客姓名:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '性別:  ' + self.qList2[qModelIndex.row()] + '\n'
@@ -84,6 +85,6 @@ class ListViewDemo_member(QWidget):
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)
-    win=ListViewDemo()
+    win=ListViewDemo_member()
     win.show()
     sys.exit(app.exec_())

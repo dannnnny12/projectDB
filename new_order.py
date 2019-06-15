@@ -43,9 +43,9 @@ class ListViewDemo_order(QWidget):
             
 
     def __init__(self,parent=None):
-        super(ListViewDemo, self).__init__(parent)
+        super(ListViewDemo_order, self).__init__(parent)
 
-        self.resize(300,270)
+        self.resize(150,75)
         self.setWindowTitle('ORDER')
 
 
@@ -70,7 +70,7 @@ class ListViewDemo_order(QWidget):
 
     def clicked(self,qModelIndex):
 
-        QMessageBox.information(self,'ListWidget',
+        QMessageBox.information(self,'訂單資訊',
         '訂單編號:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '付款方式:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '付款金額:  ' + self.qList2[qModelIndex.row()] + '\n'
@@ -78,6 +78,6 @@ class ListViewDemo_order(QWidget):
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)
-    win=ListViewDemo()
+    win=ListViewDemo_order()
     win.show()
     sys.exit(app.exec_())

@@ -45,7 +45,7 @@ class ListViewDemo_sold(QWidget):
             menber_num.append(adjust[5])
 
     def __init__(self,parent=None):
-        super(ListViewDemo, self).__init__(parent)
+        super(ListViewDemo_sold, self).__init__(parent)
 
         self.resize(300,270)
         self.setWindowTitle('SOLD')
@@ -74,7 +74,7 @@ class ListViewDemo_sold(QWidget):
 
     def clicked(self,qModelIndex):
 
-        QMessageBox.information(self,'ListWidget',
+        QMessageBox.information(self,'售出資訊',
         '售出編號:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '售出名稱:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '售出價格:  ' + self.qList2[qModelIndex.row()] + '\n'
@@ -84,6 +84,6 @@ class ListViewDemo_sold(QWidget):
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)
-    win=ListViewDemo()
+    win=ListViewDemo_sold()
     win.show()
     sys.exit(app.exec_())
