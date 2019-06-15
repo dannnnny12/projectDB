@@ -7,7 +7,7 @@ company_ID = []
 company_name = []
 
 
-class ListViewDemo(QWidget):
+class ListViewDemo_companies(QWidget):
 
     def divide_element(input_ele, num):
         for rows in input_ele:

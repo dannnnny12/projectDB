@@ -12,7 +12,7 @@ company_ID = []
 
 
 
-class ListViewDemo(QWidget):
+class ListViewDemo_order(QWidget):
 
 
     def divide_element(input_ele, num):

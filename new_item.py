@@ -14,7 +14,7 @@ order_num = []
 sold_num = []
 
 
-class ListViewDemo(QWidget):
+class ListViewDemo_items(QWidget):
 
 
     def divide_element(input_ele, num):

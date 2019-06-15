@@ -13,7 +13,7 @@ email = []
 menber_address = []
 
 
-class ListViewDemo(QWidget):
+class ListViewDemo_member(QWidget):
 
 
     def divide_element(input_ele, num):

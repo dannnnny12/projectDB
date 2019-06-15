@@ -13,7 +13,7 @@ sold_date = []
 menber_num = []
 
 
-class ListViewDemo(QWidget):
+class ListViewDemo_sold(QWidget):
 
 
     def divide_element(input_ele, num):

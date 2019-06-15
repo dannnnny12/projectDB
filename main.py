@@ -6,39 +6,39 @@
 #
 # WARNING! All changes made in this file will be lost!
 from PyQt5 import QtCore, QtGui, QtWidgets
-from items import Ui_items
-from companyList import Ui_company
-from soldHistry import Ui_soldHistory
-from memberList import Ui_memberList
-from order import Ui_order
+from new_item import ListViewDemo_items
+from new_company import ListViewDemo_companies
+from new_sold import ListViewDemo_sold
+from new_member import ListViewDemo_member
+from new_order import ListViewDemo_order
 class Ui_main(object):
 	def openItemsWindow(self):
 		self.window = QtWidgets.QMainWindow()
-		self.ui= Ui_items()
+		self.ui= ListViewDemo_items()
 		self.ui.setupUi(self.window)
 		self.window.show()
 
 	def openCompanyWindow(self):
 		self.window = QtWidgets.QMainWindow()
-		self.ui= Ui_company()
+		self.ui= ListViewDemo_companies()
 		self.ui.setupUi(self.window)
 		self.window.show()
 
 	def openSoldWindow(self):
 		self.window = QtWidgets.QMainWindow()
-		self.ui= Ui_soldHistory()
+		self.ui= ListViewDemo_sold()
 		self.ui.setupUi(self.window)
 		self.window.show()
 
 	def openOrderWindow(self):
 		self.window = QtWidgets.QMainWindow()
-		self.ui= Ui_order()
+		self.ui= ListViewDemo_order()
 		self.ui.setupUi(self.window)
 		self.window.show()
 
 	def openMemberWindow(self):
 		self.window = QtWidgets.QMainWindow()
-		self.ui= Ui_memberList()
+		self.ui= ListViewDemo_member()
 		self.ui.setupUi(self.window)
 		self.window.show()
 
