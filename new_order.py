@@ -45,7 +45,7 @@ class ListViewDemo_order(QWidget):
     def __init__(self,parent=None):
         super(ListViewDemo_order, self).__init__(parent)
 
-        self.resize(300,270)
+        self.resize(150,75)
         self.setWindowTitle('ORDER')
 
 
