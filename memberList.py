@@ -7,6 +7,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import QStringListModel
+from PyQt5.QtWidgets import QApplication,QWidget,QVBoxLayout,QListView,QMessageBox
+from PyQt5.QtCore import QStringListModel
 
 class Ui_memberList(object):
     def setupUi(self, memberList):
@@ -28,9 +31,18 @@ class Ui_memberList(object):
         self.memDetailList = QtWidgets.QListView(memberList)
         self.memDetailList.setGeometry(QtCore.QRect(200, 70, 191, 221))
         self.memDetailList.setObjectName("memDetailList")
+        slm=QStringListModel()
+        self.memDetailList=['Item 1','Item 2','Item 3','Item 4']
 
-        self.retranslateUi(memberList)
-        QtCore.QMetaObject.connectSlotsByName(memberList)
+        #设置模型列表视图，加载数据列表
+       # slm.setStringList(self.memName)
+
+        #设置列表视图的模型
+       # memName.setModel(slm)
+
+        #from PyQt5.QtWidgets import QApplication,QWidget,QVBoxLayout,QListView,QMessageBox
+#from PyQt5.QtCore import QStringListModelself.retranslateUi(memName)
+       # QtCore.QMetaObject.connectSlotsByName(memName)
 
     def retranslateUi(self, memberList):
         _translate = QtCore.QCoreApplication.translate
