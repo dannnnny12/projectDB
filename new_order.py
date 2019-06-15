@@ -43,7 +43,7 @@ class ListViewDemo_order(QWidget):
             
 
     def __init__(self,parent=None):
-        super(ListViewDemo, self).__init__(parent)
+        super(ListViewDemo_order, self).__init__(parent)
 
         self.resize(300,270)
         self.setWindowTitle('ORDER')
@@ -78,6 +78,6 @@ class ListViewDemo_order(QWidget):
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)
-    win=ListViewDemo()
+    win=ListViewDemo_order()
     win.show()
     sys.exit(app.exec_())

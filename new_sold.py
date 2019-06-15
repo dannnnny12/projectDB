@@ -45,7 +45,7 @@ class ListViewDemo_sold(QWidget):
             menber_num.append(adjust[5])
 
     def __init__(self,parent=None):
-        super(ListViewDemo, self).__init__(parent)
+        super(ListViewDemo_sold, self).__init__(parent)
 
         self.resize(300,270)
         self.setWindowTitle('SOLD')
@@ -84,6 +84,6 @@ class ListViewDemo_sold(QWidget):
 
 if __name__ == '__main__':
     app=QApplication(sys.argv)
-    win=ListViewDemo()
+    win=ListViewDemo_sold()
     win.show()
     sys.exit(app.exec_())
