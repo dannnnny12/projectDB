@@ -7,8 +7,30 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import mysql.connector
+import sys
+
 
 class Ui_items(object):
+    def connect_database():
+
+        db_connect = mysql.connector.connect(
+        host = '127.0.0.1',
+        user = 'root',
+        password = 'abit850923',
+        database = '',
+        )
+        cursor = db_connect.cursor()
+        cursor.execute('SELECT * FROM project.company')
+        result = cursor.fetchall()
+        company_ID = []
+        company_name = []
+
+        for rows in result:
+            adjust = list(rows)
+            company_ID.append(adjust[0])
+            company_name.append(adjust[1])
+
     def setupUi(self, items):
         items.setObjectName("items")
         items.resize(400, 300)
@@ -41,6 +63,7 @@ class Ui_items(object):
 
 if __name__ == "__main__":
     import sys
+    Ui_items.connect_database()
     app = QtWidgets.QApplication(sys.argv)
     items = QtWidgets.QMainWindow()
     ui = Ui_items()
