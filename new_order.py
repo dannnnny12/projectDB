@@ -70,7 +70,7 @@ class ListViewDemo_order(QWidget):
 
     def clicked(self,qModelIndex):
 
-        QMessageBox.information(self,'ListWidget',
+        QMessageBox.information(self,'訂單資訊',
         '訂單編號:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '付款方式:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '付款金額:  ' + self.qList2[qModelIndex.row()] + '\n'

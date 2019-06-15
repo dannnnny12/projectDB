@@ -61,7 +61,7 @@ class ListViewDemo_companies(QWidget):
 
     def clicked(self,qModelIndex):
 
-        QMessageBox.information(self,'ListWidget',
+        QMessageBox.information(self,'公司資訊',
         '公司名稱:'+self.qList1[qModelIndex.row()]+"\n"
         + '公司名稱:'+ self.qList1[qModelIndex.row()])
 

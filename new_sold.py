@@ -74,7 +74,7 @@ class ListViewDemo_sold(QWidget):
 
     def clicked(self,qModelIndex):
 
-        QMessageBox.information(self,'ListWidget',
+        QMessageBox.information(self,'售出資訊',
         '售出編號:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '售出名稱:  ' + self.qList1[qModelIndex.row()] + '\n' 
         + '售出價格:  ' + self.qList2[qModelIndex.row()] + '\n'
