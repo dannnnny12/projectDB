@@ -8,6 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import mysql.connector
+import sys
 
 
 class Ui_items(object):
@@ -62,7 +63,7 @@ class Ui_items(object):
 
 if __name__ == "__main__":
     import sys
-    connect_database()
+    Ui_items.connect_database()
     app = QtWidgets.QApplication(sys.argv)
     items = QtWidgets.QMainWindow()
     ui = Ui_items()
