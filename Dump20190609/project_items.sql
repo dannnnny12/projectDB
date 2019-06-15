@@ -44,7 +44,9 @@ CREATE TABLE `items` (
 
 LOCK TABLES `items` WRITE;
 /*!40000 ALTER TABLE `items` DISABLE KEYS */;
-INSERT INTO `items` VALUES ('TCA001','soda','4/9/2019','50','3yrs','A0000001','1');
+INSERT INTO `items` VALUES ('TCA001','soda','4/8/2019','55','3yrs','A0000001','1')
+,('TCA002','cookies','8/9/2019','500','2yrs','A0000002','1'),('TCA003','water','4/5/2019','461','1yrs','A0000003','1'),
+('TCA004','candy','6/14/2019','59','8yrs','A0000004','1'),('TCA005','mineral water','8/27/2019','57','9yrs','A0000005','1');
 /*!40000 ALTER TABLE `items` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -58,3 +60,4 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2019-06-09  9:30:39
+SELECT * FROM project.items;

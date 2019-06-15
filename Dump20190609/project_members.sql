@@ -39,7 +39,9 @@ CREATE TABLE `members` (
 
 LOCK TABLES `members` WRITE;
 /*!40000 ALTER TABLE `members` DISABLE KEYS */;
-INSERT INTO `members` VALUES ('C1602','chang three','male','19981202','aaa@gmail.com','ABC');
+INSERT INTO `members` VALUES ('C1602','chang three','male','19981202','aaa@gmail.com','ABC')
+,('C1603','lee four','female','19970502','bbb@gmail.com','defs'),('C1604','wu wang','male','19981202','ccc@gmail.com','fgte'),
+('C1605','chang funy','male','19981202','kkk@gmail.com','pfC'),('C1606','chi chung','female','19981022','FFF@gmail.com','ewBC');
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

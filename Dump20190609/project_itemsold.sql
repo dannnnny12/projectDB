@@ -41,7 +41,9 @@ CREATE TABLE `itemsold` (
 
 LOCK TABLES `itemsold` WRITE;
 /*!40000 ALTER TABLE `itemsold` DISABLE KEYS */;
-INSERT INTO `itemsold` VALUES ('1','food1','40','2','20200809','C1602');
+INSERT INTO `itemsold` VALUES ('1','cookie','40','9','20200809','C1602')
+,('2','candy','30','7','20200809','C1603'),
+('1','water','47','8','20200809','C1605');
 /*!40000 ALTER TABLE `itemsold` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

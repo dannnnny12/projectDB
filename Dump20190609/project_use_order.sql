@@ -39,7 +39,9 @@ CREATE TABLE `use_order` (
 
 LOCK TABLES `use_order` WRITE;
 /*!40000 ALTER TABLE `use_order` DISABLE KEYS */;
-INSERT INTO `use_order` VALUES ('A0000001','cash','200','001');
+INSERT INTO `use_order` VALUES ('A0000001','cash','200','001'),('A0000002','transfer','2200','002'),
+('A0000003','cash','200','003'),('A0000004','transfer','202460','004'),
+('A0000005','transfer','78500','005');
 /*!40000 ALTER TABLE `use_order` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
